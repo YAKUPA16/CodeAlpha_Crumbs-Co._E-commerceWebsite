@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
-    /* border: orangered 0.1rem solid; */
+    /* border: orangered 0.1rem solid;*/
 }
 
 h1, .w1, .w2, .w3 {
@@ -237,8 +237,11 @@ p{
     justify-items: auto;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     gap: 1rem;
-    overflow-x: scroll;
+    overflow: auto;
+}
 
+.carousel::-webkit-scrollbar{
+    width: 0;
 }
 
 .item img {
@@ -323,20 +326,36 @@ p{
 
 /* CART TAB */
 .cart-tab{
-    background-color: white;
+    background-color: var(--primary-color);
     position: fixed;
-    inset: 4.65rem 0 0 auto;
+    inset: 4.65rem -500px 0 auto;
     width: 25rem;
     padding-block: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 99;
+    box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cart-tab-active{
+    inset: 4.65rem 0 0 auto;
 }
 
 .cart-list{
     flex: 1;
     width: 100%;
+    margin-top: 1.5rem;
+    overflow: auto;
+}
+
+.cart-list .items:nth-child(odd){
+    background-color: var(--background-blue);
+}
+
+.cart-list::-webkit-scrollbar{
+    width: 0;
 }
 
 .total-container{
@@ -349,13 +368,65 @@ p{
 
 .total-container h4{
     display: inline-block;
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 550;
 }
 
+.btn-container .btn{
+    background-color: var(--accent-color);
+    transition: .3s ease-in-out;
+}
 
+.btn-container .btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
 
+.items{ 
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
 
+.items .item-image img{
+    width: 4rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+.item-detail{
+    width: 7rem;
+}
+
+.items h4{
+    font-size: 1rem;
+}
+
+.items .item-total{
+    font-weight: 400;
+    font-size: .95rem;
+    margin-top: .3rem;
+}
+
+.quantity-btn{
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-size: .75rem;
+    width: 1.7rem;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    text-align: center;
+    line-height: 1.7rem;
+}
+
+.quantity-value{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-inline: .6rem;
+}
 
 
 
