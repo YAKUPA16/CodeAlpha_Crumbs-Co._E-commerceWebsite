@@ -97,9 +97,13 @@ img {
     padding-top: 5rem;
 }
 
+.text-center{
+    text-align: center;
+}
 
-
-
+.mt-4{
+    margin-top: 4rem;
+}
 
 
 /* HEADER STYLING */
@@ -258,7 +262,7 @@ p{
 
 .item {
     position: relative;
-    max-width: 250px;
+    max-width:max-content;
     background-color: var(--background);
     color: var(--primary-color);
     padding: 3rem 2rem 1rem;
@@ -301,25 +305,109 @@ p{
 
 
 /* EXPLORE SECTION */
-.category {
-    display: flex;
-    border-radius: 45px;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem 0;
-
+.categories {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* left big, right stacked */
+    grid-template-rows: repeat(2, 1fr); /* two equal rows */
+    gap: 1rem;
+    height: 400px; /* set overall height for the grid */
+    margin-top: 1rem;
 }
-.category img{
+
+.category {
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-large {
+    grid-row: 1 / 3; /* spans both rows */
+}
+
+.category img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 45px;
+    border-radius: 1.5rem;
 }
 
-.cat1{
-    max-width: 50%
+
+.category-tall {
+    grid-row: 1 / 3; /* this one spans both rows */
 }
+
+.category img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+
+/* Overlay text */
+.overlay {
+  position: absolute;
+  top: 0;      
+  left: 0;    
+  right: 0;   
+  bottom: 0;  
+  color: #fff;
+  display: flex;          
+  align-items: center;       
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.overlay:hover {
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
+    transition: .3s ease-in-out;
+}
+
+/* MENU */
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.order-card{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    flex: 2;
+    width:220px;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 1.5rem;
+    padding-bottom: 10px;
+    box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.1),
+    0 4px 20px rgba(0, 0, 0, 0.1) inset;
+}
+
+.card-image{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    padding: 0;
+}
+
+.order-card img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 1.2rem;
+}
+
+
+
+
+
+
+
 
 
 
@@ -337,6 +425,7 @@ p{
     align-items: center;
     z-index: 99;
     box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in-out;
 }
 
 .cart-tab-active{

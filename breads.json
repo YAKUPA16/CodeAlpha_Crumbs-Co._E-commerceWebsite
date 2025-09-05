@@ -1,0 +1,52 @@
+[
+    {
+      "name": "White Bread",
+      "image": "/images/breads/white.jpg",
+      "price": 250,
+      "description": "A soft and fluffy everyday loaf, perfect for sandwiches."
+    },
+    {
+      "name": "Challah",
+      "image": "/images/breads/challah.jpg",
+      "price": 400,
+      "description": "Traditional braided bread with a slightly sweet, rich flavor."
+    },
+    {
+    "name": "Focaccia",
+    "price": 420,
+    "image": "/images/breads/focaccia.jpg",
+    "description": "Flat oven-baked Italian bread infused with herbs and olive oil."
+    },
+    {
+      "name": "Bagel Bread",
+      "image": "/images/breads/bagel.jpg",
+      "price": 150,
+      "description": "Dense and chewy, ideal toasted with cream cheese."
+    },
+    {
+      "name": "Sourdough",
+      "image": "/images/breads/sourdough.jpg",
+      "price": 350,
+      "description": "Tangy and rustic bread with a crunchy crust and airy inside."
+    },
+    {
+    "name": "Baguette",
+    "price": 350,
+    "image": "/images/breads/baguette.jpg",
+    "description": "Classic French baguette with a chewy inside and golden crust."
+    },
+    {
+      "name": "Whole Wheat",
+      "image": "/images/breads/whole-wheat.jpg",
+      "price": 320,
+      "description": "Hearty whole wheat bread rich in fiber and nutty flavor."
+    },
+    {
+      "name": "Flatbread",
+      "image": "/images/breads/flat.jpg",
+      "price": 275,
+      "description": "Soft, thin bread ideal for wraps, dips, and Mediterranean dishes."
+    }
+  
+]
+

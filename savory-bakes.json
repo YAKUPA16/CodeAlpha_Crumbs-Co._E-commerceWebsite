@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Quiche Lorraine",
+      "image": "/images/savory/quiche.jpg",
+      "price": 480,
+      "description": "Buttery pastry filled with egg, cheese, and smoked bacon."
+    },
+    {
+      "name": "Spinach & Feta Pie",
+      "image": "/images/savory/spinach-pie.jpg",
+      "price": 450,
+      "description": "Layers of filo pastry filled with spinach and feta cheese."
+    },
+    {
+      "name": "Sausage Roll",
+      "image": "/images/savory/sausage-roll.jpg",
+      "price": 250,
+      "description": "Golden puff pastry wrapped around seasoned sausage meat."
+    },
+    {
+      "name": "Chicken Puff",
+      "image": "/images/savory/chicken-puff.jpg",
+      "price": 300,
+      "description": "Flaky pastry filled with spiced chicken chunks."
+    }
+  ]
+

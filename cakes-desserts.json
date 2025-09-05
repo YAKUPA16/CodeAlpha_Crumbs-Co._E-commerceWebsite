@@ -1,0 +1,39 @@
+[
+    {
+      "name": "Lemon Cake",
+      "image": "/images/cakes/lemon.jpg",
+      "price": 450,
+      "description": "Zesty and moist cake with a refreshing lemon glaze."
+    },
+    {
+      "name": "Strawberry Cheesecake",
+      "image": "/images/cakes/strawberrycheesecake.jpg",
+      "price": 2200,
+      "description": "Creamy cheesecake topped with fresh strawberries and glaze."
+    },
+    {
+      "name": "Berrylicious",
+      "image": "/images/cakes/Berrylicious.jpg",
+      "price": 1900,
+      "description": "Soft cake layered with mixed berries and whipped cream."
+    },
+    {
+      "name": "Chocolate Cake",
+      "image": "/images/cakes/chocolate.jpg",
+      "price": 1000,
+      "description": "Rich and decadent chocolate sponge layered with ganache."
+    },
+    {
+      "name": "Cheesecake",
+      "image": "/images/cakes/strawberrycheesecake.jpg",
+      "price": 2000,
+      "description": "Classic creamy cheesecake with a buttery biscuit base."
+    },
+    {
+      "name": "Cupcake",
+      "image": "/images/cakes/cupcake.jpg",
+      "price": 600,
+      "description": "A mix of mini cupcakes in chocolate, vanilla, and red velvet."
+    }
+  ]
+

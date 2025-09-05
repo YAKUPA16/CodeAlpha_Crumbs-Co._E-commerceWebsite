@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Croissant",
+      "image": "/images/pastries/croissant.jpg",
+      "price": 280,
+      "description": "Flaky and buttery French pastry, best enjoyed warm."
+    },
+    {
+      "name": "Pain au Chocolat",
+      "image": "/images/pastries/pain-au-chocolat.jpg",
+      "price": 300,
+      "description": "Delicate pastry filled with rich chocolate."
+    },
+    {
+      "name": "Danish Pastry",
+      "image": "/images/pastries/danish.jpg",
+      "price": 320,
+      "description": "Sweet pastry with fruit or cream cheese filling."
+    },
+    {
+      "name": "Cinnamon Roll",
+      "image": "/images/pastries/cinnamon-roll.jpg",
+      "price": 350,
+      "description": "Sweet roll with cinnamon sugar filling and icing drizzle."
+    }
+  ]
+

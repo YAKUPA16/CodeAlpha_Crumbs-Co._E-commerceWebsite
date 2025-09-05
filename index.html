@@ -9,6 +9,7 @@
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -19,12 +20,10 @@
                 <img src="images/Crumbs&Co.Logo.png" alt="Logo">
             </div>
             <!-- DESKTOP MENU -->
-            <ul class="nav-links flex gap-3">
+            <ul class="nav-links flex gap-5">
                 <li><a href="#">Home</a></li>
+                <li><a href="#">Popular</a></li>
                 <li><a href="#">Menu</a></li>
-                <li><a href="#">Deals</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Restraunts</a></li>
             </ul>
             <div class="desktop-action flex gap-2">
                 <a class="cart-icon">
@@ -93,7 +92,7 @@
             <h2> Customer Favourites </h2>
             <div class="carousel flex">
                 <div class="item i1">
-                    <img src="images/cupcake.jpg" alt="Croissant">
+                    <img src="images/cakes/cupcake.jpg" alt="Cupcakes">
                     <h3>Red Velvet Cupcakes</h3>
                     <p>Rs. 200</p>
                     <a href="#" class="btn">Add to Cart</a>
@@ -122,51 +121,37 @@
         <section>
             <div class="Explore p-top">
                 <h2>Explore Our Menu</h2>
-                <div class="categories wrapper flex gap-3">
-                    <div class="category cat1">     
+                <div class="categories wrapper">
+                    <div class="category category-large" data-file="breads.json">     
                         <img src="images/breads.jpg" alt="Breads">
-                        <h3>Breads</h3>
+                        <div class="overlay">Breads</div>
                     </div>
-                    <div class="category">
-                        <img src="images/cake.jpg" alt="Cakes">
-                        <h3>Cakes</h3>
-                    </div>
-                    <div class="category">
+
+                    <div class="category category-tall" data-file="pastries.json">
                         <img src="images/pastry.jpg" alt="Pastries">
-                        <h3>Pastries</h3>
+                        <div class="overlay">Pastries</div>
                     </div>
-                    <div class="category">
-                        <img src="images/bread.jpg" alt="Breads">
-                        <h3>Breads</h3>
+
+                    <div class="category category-medium" data-file="cakes-desserts.json">
+                        <img src="images/Cakes.jpg" alt="Cakes">
+                        <div class="overlay">Cakes & Desserts</div>
+                    </div>
+
+                    <div class="category category-medium" data-file="savory-bakes.json">
+                        <img src="images/savory.jpg" alt="Savory">
+                        <div class="overlay">Savory Bakes</div>
                     </div>
                 </div>
-                <a href="#" class="btn">View Menu</a>
+            </div>
         </section>
+
+        <section id="product-list" class="card-list wrapper flex mt-4 text-center"> </section>
 
         <!-- CART TAB -->
         <section>
             <div class="cart-tab">
                 <h3>Your Cart</h3>
-                <div class="cart-list">
-                    <!-- <div class="items">
-                        <div class="item-image">
-                            <img src = "images/flat.jpg">
-                        </div>
-                        <div class="item-detail">
-                            <h4> Flat Bread </h4>
-                            <h4 class="item-total"> Rs.500 </h4>
-                        </div>
-                        <div class="flex">
-                            <a href="#" class="quantity-btn">
-                                <i class="fa-solid fa-minus"></i>
-                            </a>
-                            <h4 class="quantity-value">1</h4>
-                            <a href="#" class="quantity-btn">
-                                <i class="fa-solid fa-plus"></i>
-                            </a>
-                        </div>
-                    </div>    -->
-                </div>
+                <div class="cart-list"></div>
 
                 <div class="total-container">
                     <h4>Total: </h4>
