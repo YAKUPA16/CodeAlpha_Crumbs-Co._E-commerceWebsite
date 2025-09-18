@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- HEADER PART -->
+    <header>
+        <nav class="navbar flex between wrapper">
+            <div class="logo">
+                <img src="images/Crumbs&Co.Logo.png" alt="Logo">
+            </div>
+            <!-- DESKTOP MENU -->
+            <ul class="nav-links flex gap-5">
+                <li><a href="#">Home</a></li>
+                <li><a href="#popular">Popular</a></li>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+            <div class="desktop-action flex gap-2">
+                <a class="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="#" class="btn" id="signupBtn">
+                    <i class="fas fa-sign-in-alt"></i>
+                    &nbsp;
+                    Sign In
+                </a>
+                <a class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+
+            <!-- MOBILE MENU -->
+            <ul class="mobile-nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#popular">Popular</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li>
+                    <a href="#" class="btn" id="signupBtn">
+                        <i class="fas fa-sign-in-alt"></i>
+                        &nbsp;
+                        Sign In
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECTION PART -->
+    <main>
+
+        <section>
+            <div class="hero-section flex wrapper p-top">
+                <div class="content">
+                    <h1>Freshly
+                        <span class=w1>Baked</span>
+                        <span class=w2>Happiness,</span>
+                        One <span class=w3>Crumb</span>
+                        at a Time
+                    </h1>
+                    <p>
+                        Discover the joy of artisanal baked goods crafted with love and passion.
+                        From flaky pastries to hearty breads, we bring you a taste of happiness in every bite.
+                    </p>
+                    <a href="#" class="Order btn"> Order Now</a>
+                </div>
+                <div class="hero-image">
+                    <span class="discount"> 20% <br> OFF </span>
+                    <img src="images/croissantwithbakg.PNG" alt="Hero Image">
+                    <span class="hero-name">CRUNCHY<br>CROISSANTS</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="popular">
+            <h2> Customer Favourites </h2>
+            <div class="carousel flex">
+                <div class="item i1">
+                    <img src="images/cakes/cupcake.jpg" alt="Cupcakes">
+                    <h3>Red Velvet Cupcakes</h3>
+                    <p>Rs. 200</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="item i2">
+                    <img src="images/brownie.jpg" alt="Brownie">
+                    <h3>Raspberry Brownies</h3>
+                    <p>Rs. 250</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="item i3">
+                    <img src="images/cookie.jpg" alt="Cookies">
+                    <h3>Coconut Cookies</h3>
+                    <p>Rs. 100</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div> 
+                <div class="item i4">
+                    <img src="images/donut.jpg" alt="Donuts">
+                    <h3>Sprinkled Donuts</h3>
+                    <p>Rs. 180</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div> 
+            </div>
+        </section>
+
+        <section id="menu">
+            <div class="Explore p-top">
+                <h2>Explore Our Menu</h2>
+                <div class="categories wrapper">
+                    <div class="category category-large" data-file="breads.json">     
+                        <img src="images/breads.jpg" alt="Breads">
+                        <div class="overlay">Breads</div>
+                    </div>
+
+                    <div class="category category-tall" data-file="pastries.json">
+                        <img src="images/pastry.jpg" alt="Pastries">
+                        <div class="overlay">Pastries</div>
+                    </div>
+
+                    <div class="category category-medium" data-file="cakes-desserts.json">
+                        <img src="images/Cakes.jpg" alt="Cakes">
+                        <div class="overlay">Cakes & Desserts</div>
+                    </div>
+
+                    <div class="category category-medium" data-file="savory-bakes.json">
+                        <img src="images/savory.jpg" alt="Savory">
+                        <div class="overlay">Savory Bakes</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="product-list" class="card-list wrapper flex mt-4 text-center"> </section>
+
+        <!-- CART TAB -->
+        <section>
+            <div class="cart-tab">
+                <h3>Your Cart</h3>
+                <div class="cart-list"></div>
+
+                <div class="total-container">
+                    <h4>Total: </h4>
+                    <h4 class="cart-total">Rs.00.00</h4>
+                </div>
+
+                <div class="btn-container flex gap-2">
+                    <a href="#" class="btn close-btn">Close</a>
+                    <a href="#" class="btn">Check out</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close-btn">
+                <i class="fa-solid fa-x"></i>
+            </span>
+            <div class="modal-body">
+                <div class="modal-content-wrapper">
+                    <div class="product-image">
+                        <img id="modalImage" src="" alt="">
+                    </div>
+                    <div class="product-details">
+                        <h2 id="modalName"></h2>
+                        <p id="modalPrice"></p>
+                        <p id="modalDesc"></p>
+                        <button id="modalAddToCart" class="btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content wrapper flex between">
+            <div class="column c1">
+                <div class="logo">
+                    <img src="images/Crumbs&Co.Logo.png" alt="Logo">
+                </div>
+                <p>
+                    Crumbs & Co. is your go-to destination for artisanal baked goods,
+                    where every bite is a celebration of flavor and quality.
+                    Join us in savoring the joy of freshly baked happiness.
+                </p>
+                <div class="social-icons flex gap-5">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="column c2">
+                <h3>Contact Us</h3>
+                <ul class="contact">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        123 Bakery Lane, Food City
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        +1 (234) 567-8901
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:Crumbs&Co.@gmail.com">Crumbs&Co.@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="column c3">
+                <h3>Opening Hours</h3>
+                <table class="open-hours">
+                    <tr>
+                        <td>Mon - Fri</td>
+                        <td>8:00 AM - 8:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>9:00 AM - 9:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="legal">
+                &copy; 2025 Crumbs & Co. All rights reserved.   | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Refund Policy</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
