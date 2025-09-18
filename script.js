@@ -22,7 +22,8 @@ cartIcon.addEventListener("click", () => {
 });
 
 // Close cart tab
-closeBtn.addEventListener("click", () => {
+closeBtn.addEventListener("click", (e) => {
+  e.preventDefault();
   cartTab.classList.remove("cart-tab-active");
 });
 
