@@ -45,8 +45,8 @@ It allows users to browse products, view details in a modal, add items to a cart
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/crumbs-co.git
-   cd crumbs-co
+   git clone https://github.com/yourusername/CodeAlpha_Crumbs-Co._E-commerceWebsite.git
+   cd CodeAlpha_Crumbs-Co._E-commerceWebsite 
 
 2. Install dependencies:  
    ```bash
