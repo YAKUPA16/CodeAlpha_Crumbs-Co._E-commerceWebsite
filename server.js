@@ -31,7 +31,7 @@ app.post("/api/orders", (req, res) => {
     return res.status(401).json({ error: "Login required" });
   }
 
-  const orders = JSON.parse(fs.readFileSync("orders.json", "utf-8"));
+  const orders = loadOrders(); // use helper instead of raw fs.readFileSync
   const newOrder = {
     id: Date.now(),
     userId: req.body.userId,
@@ -40,8 +40,15 @@ app.post("/api/orders", (req, res) => {
   };
 
   orders.push(newOrder);
-  fs.writeFileSync("orders.json", JSON.stringify(orders, null, 2));
-  res.json(newOrder);
+
+  try {
+    fs.writeFileSync(ordersFile, JSON.stringify(orders, null, 2));
+    console.log("✅ Order saved:", newOrder);
+    res.json(newOrder);
+  } catch (err) {
+    console.error("❌ Failed to save order:", err);
+    res.status(500).json({ error: "Failed to save order" });
+  }
 });
 
 
