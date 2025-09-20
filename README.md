@@ -58,7 +58,7 @@ It allows users to browse products, view details in a modal, add items to a cart
 
 ---
 
-## Project Screenshots
+## 📷 Project Screenshots
 
 | Hero Section | Carousel Section |
 |--------------|------------------|
@@ -83,3 +83,7 @@ It allows users to browse products, view details in a modal, add items to a cart
 | Responsive Page (Hamburger Navbar) |
 |------------------------------------|
 | <img src="https://github.com/user-attachments/assets/bf85ee4a-b92d-4924-ade2-d0819c0d054b" width="400"/> |   |
+
+## 🎥 Quick Demo
+https://github.com/user-attachments/assets/1d1df46b-f0b9-46e4-b017-d18daf7faf79
+
